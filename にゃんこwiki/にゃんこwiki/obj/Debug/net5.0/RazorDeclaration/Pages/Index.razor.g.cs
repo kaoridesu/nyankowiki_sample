@@ -83,13 +83,12 @@ using にゃんこwiki.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
+#line 3 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
 using System.Text.Json;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -99,18 +98,20 @@ using System.Text.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 143 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
+#line 180 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
  
     List<MasterEnemy> 敵一覧 = new List<MasterEnemy>();
+    List<MasterUnit> 味方一覧 = new List<MasterUnit>();
 
     protected override async Task OnInitializedAsync()
     {
         string json = await HttpClient.GetStringAsync(requestUri: "master-data/master_enemy.json");
-        Console.WriteLine(json);
+    // Console.WriteLine(json);json
+
         JsonDocument jsonDocument = JsonDocument.Parse(json);
         JsonElement jsonElement = jsonDocument.RootElement.GetProperty("[D]master_enemy");
         JsonElement.ArrayEnumerator list = jsonElement.EnumerateArray();
-       
+
         foreach (JsonElement masterEnemyObject in list)
         {
             int 識別番号 = masterEnemyObject.GetProperty("識別番号").GetInt32();
@@ -128,7 +129,7 @@ using System.Text.Json;
             int 射程 = masterEnemyObject.GetProperty("射程").GetInt32();
             int お金 = masterEnemyObject.GetProperty("お金").GetInt32();
             string 特性 = masterEnemyObject.GetProperty("特性").GetString();
-            
+
             MasterEnemy masterEnemy = new MasterEnemy(
                 識別番号,
                 属性ID,
@@ -147,11 +148,54 @@ using System.Text.Json;
                 特性);
             敵一覧.Add(masterEnemy);
         }
+
+        string json2 = await HttpClient.GetStringAsync(requestUri: "master-data/master_unit.json");
+    // Console.WriteLine(json);json
+
+        JsonDocument jsonDocument2 = JsonDocument.Parse(json2);
+        JsonElement jsonElement2 = jsonDocument2.RootElement.GetProperty("[D]master_unit");
+        JsonElement.ArrayEnumerator list2 = jsonElement2.EnumerateArray();
+        
+        foreach (JsonElement masterUnitObject in list2)
+        {
+            int 識別番号 = masterUnitObject.GetProperty("識別番号").GetInt32();
+            UnitRank ランク　= (UnitRank)masterUnitObject.GetProperty("ランク").GetInt32();
+            string キャラクター名 = masterUnitObject.GetProperty("キャラクター名").GetString();
+            int カスタマイズレベル = masterUnitObject.GetProperty("カスタマイズレベル").GetInt32();
+            int 体力 = masterUnitObject.GetProperty("体力").GetInt32();
+            int ノックバック = masterUnitObject.GetProperty("ノックバック").GetInt32();
+            int 速度 = masterUnitObject.GetProperty("速度").GetInt32();
+            int 攻撃力 = masterUnitObject.GetProperty("攻撃力").GetInt32();
+            int DPS = masterUnitObject.GetProperty("DPS").GetInt32();
+            UnitRange 範囲 = (UnitRange) masterUnitObject.GetProperty("範囲").GetInt32();
+            int 頻度フレーム = masterUnitObject.GetProperty("頻度フレーム").GetInt32();
+            int 発生フレーム = masterUnitObject.GetProperty("発生フレーム").GetInt32();
+            int 射程 = masterUnitObject.GetProperty("射程").GetInt32();
+            int コスト = masterUnitObject.GetProperty("コスト").GetInt32();
+            int 再生産フレーム = masterUnitObject.GetProperty("再生産フレーム").GetInt32();
+            string 特性 = masterUnitObject.GetProperty("特性").GetString();
+
+            MasterUnit masterUnit = new MasterUnit(
+                識別番号,
+                ランク,
+                キャラクター名,
+                カスタマイズレベル,
+                体力,
+                ノックバック,
+                速度,
+                攻撃力,
+                DPS,
+                範囲,
+                頻度フレーム, 
+                発生フレーム,
+                射程,
+                コスト,
+                再生産フレーム,
+                特性);
+            味方一覧.Add(masterUnit);
+        }
     }
 
-    // protected override void OnInitialized()
-    // {
-    // }
     public class MasterEnemy
     {
         public int 識別番号;
@@ -198,36 +242,36 @@ using System.Text.Json;
         public int カスタマイズレベル;
         public int 体力;
         public int ノックバック;
-        int 速度;
-        int 攻撃力;
-        int DPS;
-        UnitRange 範囲;
-        int 頻度フレーム;
-        int 発生フレーム;
-        int 射程;
-        int コスト;
-        int 再生産フレーム;
-        String 特性;
+        public int 速度;
+        public int 攻撃力;
+        public int DPS;
+        public UnitRange 範囲;
+        public int 頻度フレーム;
+        public int 発生フレーム;
+        public int 射程;
+        public int コスト;
+        public int 再生産フレーム;
+        public String 特性;
 
-        // public MasterUnit(int 識別番号, UnitRank ランク, string キャラクター名, int カスタマイズレベル, int 体力, int ノックバック, int 速度, int 攻撃力, int dps, UnitRange 範囲, int 頻度フレーム, int 発生フレーム, int 射程, int コスト, int 再生産フレーム, string 特性)
-        // {
-        //     this.識別番号 = 識別番号;
-        //     this.ランク = ランク;
-        //     this.キャラクター名 = キャラクター名;
-        //     this.カスタマイズレベル = カスタマイズレベル;
-        //     this.体力 = 体力;
-        //     this.ノックバック = ノックバック;
-        //     this.速度 = 速度;
-        //     this.攻撃力 = 攻撃力;
-        //     this.DPS = dps;
-        //     this.範囲 = 範囲;
-        //     this.頻度フレーム = 頻度フレーム;
-        //     this.発生フレーム = 発生フレーム;
-        //     this.射程 = 射程;
-        //     this.コスト = コスト;
-        //     this.再生産フレーム = 再生産フレーム;
-        //     this.特性 = 特性;
-        // }
+        public MasterUnit(int 識別番号, UnitRank ランク, string キャラクター名, int カスタマイズレベル, int 体力, int ノックバック, int 速度, int 攻撃力, int dps, UnitRange 範囲, int 頻度フレーム, int 発生フレーム, int 射程, int コスト, int 再生産フレーム, string 特性)
+        {
+            this.識別番号 = 識別番号;
+            this.ランク = ランク;
+            this.キャラクター名 = キャラクター名;
+            this.カスタマイズレベル = カスタマイズレベル;
+            this.体力 = 体力;
+            this.ノックバック = ノックバック;
+            this.速度 = 速度;
+            this.攻撃力 = 攻撃力;
+            this.DPS = dps;
+            this.範囲 = 範囲;
+            this.頻度フレーム = 頻度フレーム;
+            this.発生フレーム = 発生フレーム;
+            this.射程 = 射程;
+            this.コスト = コスト;
+            this.再生産フレーム = 再生産フレーム;
+            this.特性 = 特性;
+        }
     }
 
     public class MasterEnemyAttribute
@@ -269,6 +313,7 @@ using System.Text.Json;
         黒い敵 = 3,
         浮いている敵 = 4
     }
+    
 
 #line default
 #line hidden
