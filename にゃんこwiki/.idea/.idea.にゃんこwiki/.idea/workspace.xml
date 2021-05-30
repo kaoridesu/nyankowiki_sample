@@ -7,6 +7,7 @@
     <list default="true" id="dc308b3c-8e6d-4eca-92f6-8a5ed74f5ded" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/ref/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/ref/にゃんこwiki.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.pdb" afterDir="false" />
@@ -17,6 +18,7 @@
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/ref/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/ref/にゃんこwiki.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb" afterDir="false" />
     </list>
@@ -96,7 +98,7 @@
       <updated>1622258546020</updated>
       <workItem from="1622258574245" duration="3919000" />
       <workItem from="1622275228592" duration="17176000" />
-      <workItem from="1622381619082" duration="1850000" />
+      <workItem from="1622381619082" duration="10030000" />
     </task>
     <servers />
   </component>

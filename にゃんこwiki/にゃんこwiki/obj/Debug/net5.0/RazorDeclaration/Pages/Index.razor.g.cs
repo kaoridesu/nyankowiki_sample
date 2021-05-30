@@ -98,10 +98,11 @@ using System.Text.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 179 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
+#line 205 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
  
     List<MasterEnemy> 敵一覧 = new List<MasterEnemy>();
     List<MasterUnit> 味方一覧 = new List<MasterUnit>();
+    List<MasterEnemyAttribute> 属性一覧 = new List<MasterEnemyAttribute>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -149,7 +150,7 @@ using System.Text.Json;
             敵一覧.Add(masterEnemy);
         }
 
-        string json2 = await HttpClient.GetStringAsync(requestUri: "master-data/master_unit.json");
+        string json2 = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
     // Console.WriteLine(json);json
 
         JsonDocument jsonDocument2 = JsonDocument.Parse(json2);
@@ -194,6 +195,15 @@ using System.Text.Json;
                 特性);
             味方一覧.Add(masterUnit);
         }
+    //     string json3 = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
+    // // Console.WriteLine(json);json
+    //
+    //     JsonElement jsonElement3 = jsonDocument.RootElement.GetProperty("[D]master_enemy_attribute");
+    //     JsonElement.ArrayEnumerator list3 = jsonElement.EnumerateArray();
+    //
+    //     foreach (JsonElement masterEnemyAttributeObject in list3)
+    //     {
+    //     }
     }
 
     public class MasterEnemy
