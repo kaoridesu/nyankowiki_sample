@@ -4,7 +4,22 @@
     <projectFile>にゃんこwiki/にゃんこwiki.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc308b3c-8e6d-4eca-92f6-8a5ed74f5ded" name="Default Changelist" comment="" />
+    <list default="true" id="dc308b3c-8e6d-4eca-92f6-8a5ed74f5ded" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,9 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -83,7 +95,8 @@
       <option name="presentableId" value="Default" />
       <updated>1622258546020</updated>
       <workItem from="1622258574245" duration="3919000" />
-      <workItem from="1622275228592" duration="16424000" />
+      <workItem from="1622275228592" duration="17176000" />
+      <workItem from="1622381619082" duration="1850000" />
     </task>
     <servers />
   </component>
@@ -102,6 +115,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

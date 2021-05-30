@@ -98,14 +98,14 @@ using System.Text.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 180 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
+#line 179 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
  
     List<MasterEnemy> 敵一覧 = new List<MasterEnemy>();
     List<MasterUnit> 味方一覧 = new List<MasterUnit>();
 
     protected override async Task OnInitializedAsync()
     {
-        string json = await HttpClient.GetStringAsync(requestUri: "master-data/master_enemy.json");
+        string json = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
     // Console.WriteLine(json);json
 
         JsonDocument jsonDocument = JsonDocument.Parse(json);
@@ -155,11 +155,11 @@ using System.Text.Json;
         JsonDocument jsonDocument2 = JsonDocument.Parse(json2);
         JsonElement jsonElement2 = jsonDocument2.RootElement.GetProperty("[D]master_unit");
         JsonElement.ArrayEnumerator list2 = jsonElement2.EnumerateArray();
-        
+
         foreach (JsonElement masterUnitObject in list2)
         {
             int 識別番号 = masterUnitObject.GetProperty("識別番号").GetInt32();
-            UnitRank ランク　= (UnitRank)masterUnitObject.GetProperty("ランク").GetInt32();
+            UnitRank ランク = (UnitRank) masterUnitObject.GetProperty("ランク").GetInt32();
             string キャラクター名 = masterUnitObject.GetProperty("キャラクター名").GetString();
             int カスタマイズレベル = masterUnitObject.GetProperty("カスタマイズレベル").GetInt32();
             int 体力 = masterUnitObject.GetProperty("体力").GetInt32();
@@ -186,7 +186,7 @@ using System.Text.Json;
                 攻撃力,
                 DPS,
                 範囲,
-                頻度フレーム, 
+                頻度フレーム,
                 発生フレーム,
                 射程,
                 コスト,
@@ -313,7 +313,6 @@ using System.Text.Json;
         黒い敵 = 3,
         浮いている敵 = 4
     }
-    
 
 #line default
 #line hidden

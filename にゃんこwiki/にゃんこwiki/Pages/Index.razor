@@ -22,8 +22,8 @@
     //MasterEnemyAttribute 属性2 = new MasterEnemyAttribute(識別番号: 2, 敵のid: 2, EnemyAttributeType.白い敵);
     //MasterEnemyAttribute 属性3 = new MasterEnemyAttribute(識別番号: 3, 敵のid: 3, EnemyAttributeType.白い敵);
 }
-<table>
-    <thead>
+<table class="table" style="font-size:small">
+    <thead class="thead-light">
     <tr>
         <th>No</th>
         <th>属性</th>
@@ -41,8 +41,9 @@
         <th>お金</th>
         <th>特性</th>
     </tr>
-    
+
     </thead>
+
     <tbody>
     @{
         foreach (var 敵　in 敵一覧)
@@ -66,7 +67,7 @@
             </tr>
         }
 
-       
+
     }
 
     @* <tr> *@
@@ -122,9 +123,9 @@
     @* </tr> *@
     </tbody>
 </table>
-<table>
-    <thead>
-    
+<table class="table" style="font-size: small">
+    <thead class="thead-light">
+
     <tr>
         <th>No</th>
         <th>ランク</th>
@@ -144,35 +145,33 @@
         <th>特性</th>
     </tr>
     </thead>
+
     <tbody>
     @{
-        
         foreach (var 味方 in 味方一覧)
         {
-           <tr>
-            
-            <td>@味方.識別番号</td>
-            <td>@味方.ランク</td>
-            <td>@味方.キャラクター名</td>
-            <td>@味方.カスタマイズレベル</td>
-            <td>@味方.体力</td>
-            <td>@味方.ノックバック</td>
-            <td>@味方.速度</td>
-            <td>@味方.攻撃力</td>
-            <td>@味方.DPS</td>
-            <td>@味方.範囲</td>
-            <td>@味方.頻度フレーム</td>
-            <td>@味方.発生フレーム</td>
-            <td>@味方.射程</td>
-            <td>@味方.コスト</td>
-            <td>@味方.再生産フレーム</td>
-            <td>@味方.特性</td>
-    </tr> 
+            <tr>
+
+                <td>@味方.識別番号</td>
+                <td>@味方.ランク</td>
+                <td>@味方.キャラクター名</td>
+                <td>@味方.カスタマイズレベル</td>
+                <td>@味方.体力</td>
+                <td>@味方.ノックバック</td>
+                <td>@味方.速度</td>
+                <td>@味方.攻撃力</td>
+                <td>@味方.DPS</td>
+                <td>@味方.範囲</td>
+                <td>@味方.頻度フレーム</td>
+                <td>@味方.発生フレーム</td>
+                <td>@味方.射程</td>
+                <td>@味方.コスト</td>
+                <td>@味方.再生産フレーム</td>
+                <td>@味方.特性</td>
+            </tr>
         }
 
     }
-
-   
     </tbody>
 </table>
 
@@ -183,7 +182,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        string json = await HttpClient.GetStringAsync(requestUri: "master-data/master_enemy.json");
+        string json = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
     // Console.WriteLine(json);json
 
         JsonDocument jsonDocument = JsonDocument.Parse(json);
@@ -233,11 +232,11 @@
         JsonDocument jsonDocument2 = JsonDocument.Parse(json2);
         JsonElement jsonElement2 = jsonDocument2.RootElement.GetProperty("[D]master_unit");
         JsonElement.ArrayEnumerator list2 = jsonElement2.EnumerateArray();
-        
+
         foreach (JsonElement masterUnitObject in list2)
         {
             int 識別番号 = masterUnitObject.GetProperty("識別番号").GetInt32();
-            UnitRank ランク　= (UnitRank)masterUnitObject.GetProperty("ランク").GetInt32();
+            UnitRank ランク = (UnitRank) masterUnitObject.GetProperty("ランク").GetInt32();
             string キャラクター名 = masterUnitObject.GetProperty("キャラクター名").GetString();
             int カスタマイズレベル = masterUnitObject.GetProperty("カスタマイズレベル").GetInt32();
             int 体力 = masterUnitObject.GetProperty("体力").GetInt32();
@@ -264,7 +263,7 @@
                 攻撃力,
                 DPS,
                 範囲,
-                頻度フレーム, 
+                頻度フレーム,
                 発生フレーム,
                 射程,
                 コスト,
@@ -391,4 +390,4 @@
         黒い敵 = 3,
         浮いている敵 = 4
     }
-    } 
+}
