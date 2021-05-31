@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc308b3c-8e6d-4eca-92f6-8a5ed74f5ded" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +85,7 @@
       <workItem from="1622258574245" duration="3919000" />
       <workItem from="1622275228592" duration="17176000" />
       <workItem from="1622381619082" duration="10325000" />
-      <workItem from="1622437610256" duration="2369000" />
+      <workItem from="1622437610256" duration="3702000" />
     </task>
     <servers />
   </component>

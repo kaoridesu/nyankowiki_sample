@@ -205,13 +205,13 @@ using System.Text.Json;
         {
             int 識別番号 = masterEnemyAttributeObject.GetProperty("識別番号").GetInt32();
             int 敵のID = masterEnemyAttributeObject.GetProperty("敵のID").GetInt32();
-            EnemyAttributeType 敵の属性タイプ= (EnemyAttributeType)masterEnemyAttributeObject.GetProperty("敵の属性タイプ").GetInt32();
+            EnemyAttributeType 敵の属性のタイプ= (EnemyAttributeType)masterEnemyAttributeObject.GetProperty("敵の属性のタイプ").GetInt32();
 
 
             MasterEnemyAttribute 敵の属性 = new MasterEnemyAttribute(
                 識別番号, 
                 敵のID,
-                敵の属性タイプ);
+                敵の属性のタイプ);
             属性一覧.Add(敵の属性);
         }
     }
@@ -298,13 +298,13 @@ using System.Text.Json;
     {
         public int 識別番号;
         public int 敵のID;
-        public EnemyAttributeType 敵の属性タイプ;
+        public EnemyAttributeType 敵の属性のタイプ;
 
-        public MasterEnemyAttribute(int 識別番号, int 敵のid, EnemyAttributeType 敵の属性タイプ)
+        public MasterEnemyAttribute(int 識別番号, int 敵のid, EnemyAttributeType 敵の属性のタイプ)
         {
             this.識別番号 = 識別番号;
             敵のID = 敵のid;
-            this.敵の属性タイプ = 敵の属性タイプ;
+            this.敵の属性のタイプ = 敵の属性のタイプ;
         }
     }
 
