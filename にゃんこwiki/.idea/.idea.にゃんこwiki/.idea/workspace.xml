@@ -32,8 +32,8 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/にゃんこwiki/wwwroot/master-data/master_enemy.json" />
       <option value="$PROJECT_DIR$/にゃんこwiki/wwwroot/master-data/master_unit.json" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/wwwroot/master-data/master_enemy.json" />
       <option value="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" />
     </changedPaths>
   </component>
@@ -98,7 +98,8 @@
       <updated>1622258546020</updated>
       <workItem from="1622258574245" duration="3919000" />
       <workItem from="1622275228592" duration="17176000" />
-      <workItem from="1622381619082" duration="10030000" />
+      <workItem from="1622381619082" duration="10325000" />
+      <workItem from="1622437610256" duration="521000" />
     </task>
     <servers />
   </component>

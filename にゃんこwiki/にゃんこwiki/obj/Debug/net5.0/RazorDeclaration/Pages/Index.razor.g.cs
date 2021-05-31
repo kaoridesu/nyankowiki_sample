@@ -199,10 +199,20 @@ using System.Text.Json;
     // // Console.WriteLine(json);json
     //
     //     JsonElement jsonElement3 = jsonDocument.RootElement.GetProperty("[D]master_enemy_attribute");
-    //     JsonElement.ArrayEnumerator list3 = jsonElement.EnumerateArray();
+    //     JsonElement.ArrayEnumerator list3 = jsonElement3.EnumerateArray();
     //
     //     foreach (JsonElement masterEnemyAttributeObject in list3)
     //     {
+    //         int 識別番号 = masterEnemyAttributeObject.GetProperty("識別番号").GetInt32();
+    //         int 属性ID = masterEnemyAttributeObject.GetProperty("属性ID").GetInt32();
+    //         EnemyAttributeType = (EnemyAttributeType) masterEnemyAttributeObject.GetProperty("敵の属性タイプ").GetInt32();
+    //
+    //
+    //         MasterEnemyAttribute masterUnitEnemyAttribute = new MasterEnemyAttribute(
+    //             識別番号,
+    //             属性ID,
+    //             敵の属性タイプ);
+    //         属性一覧.Add(masterEnemAttribute);
     //     }
     }
 
@@ -286,9 +296,9 @@ using System.Text.Json;
 
     public class MasterEnemyAttribute
     {
-        int 識別番号;
-        int 敵のID;
-        EnemyAttributeType 敵の属性のタイプ;
+        public int 識別番号;
+        public int 敵のID;
+        public EnemyAttributeType 敵の属性のタイプ;
 
         public MasterEnemyAttribute(int 識別番号, int 敵のid, EnemyAttributeType 敵の属性のタイプ)
         {
@@ -323,6 +333,7 @@ using System.Text.Json;
         黒い敵 = 3,
         浮いている敵 = 4
     }
+    
 
 #line default
 #line hidden

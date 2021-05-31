@@ -189,7 +189,7 @@
         foreach (var 属性　in 属性一覧)
         {
             <tr>
-                <td>@属性一覧.識別番号</td>
+                <td>@属性一覧.</td>
                 <td>@属性一覧.敵のID</td>
                 <td>@属性一覧.敵の属性タイプ</td>
 
@@ -302,7 +302,7 @@
     // Console.WriteLine(json);json
 
         JsonElement jsonElement3 = jsonDocument.RootElement.GetProperty("[D]master_enemy_attribute");
-        JsonElement.ArrayEnumerator list3 = jsonElement.EnumerateArray();
+        JsonElement.ArrayEnumerator list3 = jsonElement3.EnumerateArray();
 
         foreach (JsonElement masterEnemyAttributeObject in list3)
         {
@@ -311,12 +311,13 @@
             EnemyAttributeType = (EnemyAttributeType) masterEnemyAttributeObject.GetProperty("敵の属性タイプ").GetInt32();
 
 
-            MasterUnit masterUnit = new MasterUnit(
+            MasterEnemyAttribute masterUnitEnemyAttribute = new MasterEnemyAttribute(
                 識別番号,
                 属性ID,
                 敵の属性タイプ);
             属性一覧.Add(masterEnemAttribute);
         }
+    }
 
     public class MasterEnemy
     {
