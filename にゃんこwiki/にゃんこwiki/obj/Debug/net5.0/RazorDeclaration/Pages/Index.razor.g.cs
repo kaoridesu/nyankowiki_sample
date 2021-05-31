@@ -195,25 +195,25 @@ using System.Text.Json;
                 特性);
             味方一覧.Add(masterUnit);
         }
-    //     string json3 = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
-    // // Console.WriteLine(json);json
-    //
-    //     JsonElement jsonElement3 = jsonDocument.RootElement.GetProperty("[D]master_enemy_attribute");
-    //     JsonElement.ArrayEnumerator list3 = jsonElement3.EnumerateArray();
-    //
-    //     foreach (JsonElement masterEnemyAttributeObject in list3)
-    //     {
-    //         int 識別番号 = masterEnemyAttributeObject.GetProperty("識別番号").GetInt32();
-    //         int 属性ID = masterEnemyAttributeObject.GetProperty("属性ID").GetInt32();
-    //         EnemyAttributeType = (EnemyAttributeType) masterEnemyAttributeObject.GetProperty("敵の属性タイプ").GetInt32();
-    //
-    //
-    //         MasterEnemyAttribute masterUnitEnemyAttribute = new MasterEnemyAttribute(
-    //             識別番号,
-    //             属性ID,
-    //             敵の属性タイプ);
-    //         属性一覧.Add(masterEnemAttribute);
-    //     }
+        string json3 = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
+    // Console.WriteLine(json);json
+
+        JsonElement jsonElement3 = jsonDocument.RootElement.GetProperty("[D]master_enemy_attribute");
+        JsonElement.ArrayEnumerator list3 = jsonElement3.EnumerateArray();
+
+        foreach (JsonElement masterEnemyAttributeObject in list3)
+        {
+            int 識別番号 = masterEnemyAttributeObject.GetProperty("識別番号").GetInt32();
+            int 敵のID = masterEnemyAttributeObject.GetProperty("敵のID").GetInt32();
+            EnemyAttributeType 敵の属性タイプ= (EnemyAttributeType)masterEnemyAttributeObject.GetProperty("敵の属性タイプ").GetInt32();
+
+
+            MasterEnemyAttribute masterUnitEnemyAttribute = new MasterEnemyAttribute(
+                識別番号, 
+                敵のID,
+                敵の属性タイプ);
+            属性一覧.Add(masterUnitEnemyAttribute);
+        }
     }
 
     public class MasterEnemy
@@ -298,13 +298,13 @@ using System.Text.Json;
     {
         public int 識別番号;
         public int 敵のID;
-        public EnemyAttributeType 敵の属性のタイプ;
+        public EnemyAttributeType 敵の属性タイプ;
 
-        public MasterEnemyAttribute(int 識別番号, int 敵のid, EnemyAttributeType 敵の属性のタイプ)
+        public MasterEnemyAttribute(int 識別番号, int 敵のid, EnemyAttributeType 敵の属性タイプ)
         {
             this.識別番号 = 識別番号;
             敵のID = 敵のid;
-            this.敵の属性のタイプ = 敵の属性のタイプ;
+            this.敵の属性タイプ = 敵の属性タイプ;
         }
     }
 

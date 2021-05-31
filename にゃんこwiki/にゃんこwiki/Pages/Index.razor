@@ -189,9 +189,9 @@
         foreach (var 属性　in 属性一覧)
         {
             <tr>
-                <td>@属性一覧.</td>
-                <td>@属性一覧.敵のID</td>
-                <td>@属性一覧.敵の属性タイプ</td>
+                <td>@属性.識別番号</td>
+                <td>@属性.敵のID</td>
+                <td>@属性.敵の属性タイプ</td>
 
             </tr>
         }
@@ -307,15 +307,15 @@
         foreach (JsonElement masterEnemyAttributeObject in list3)
         {
             int 識別番号 = masterEnemyAttributeObject.GetProperty("識別番号").GetInt32();
-            int 属性ID = masterEnemyAttributeObject.GetProperty("属性ID").GetInt32();
-            EnemyAttributeType = (EnemyAttributeType) masterEnemyAttributeObject.GetProperty("敵の属性タイプ").GetInt32();
+            int 敵のID = masterEnemyAttributeObject.GetProperty("敵のID").GetInt32();
+            EnemyAttributeType 敵の属性タイプ= (EnemyAttributeType)masterEnemyAttributeObject.GetProperty("敵の属性タイプ").GetInt32();
 
 
             MasterEnemyAttribute masterUnitEnemyAttribute = new MasterEnemyAttribute(
-                識別番号,
-                属性ID,
+                識別番号, 
+                敵のID,
                 敵の属性タイプ);
-            属性一覧.Add(masterEnemAttribute);
+            属性一覧.Add(masterUnitEnemyAttribute);
         }
     }
 
@@ -401,13 +401,13 @@
     {
         public int 識別番号;
         public int 敵のID;
-        public EnemyAttributeType 敵の属性のタイプ;
+        public EnemyAttributeType 敵の属性タイプ;
 
-        public MasterEnemyAttribute(int 識別番号, int 敵のid, EnemyAttributeType 敵の属性のタイプ)
+        public MasterEnemyAttribute(int 識別番号, int 敵のid, EnemyAttributeType 敵の属性タイプ)
         {
             this.識別番号 = 識別番号;
             敵のID = 敵のid;
-            this.敵の属性のタイプ = 敵の属性のタイプ;
+            this.敵の属性タイプ = 敵の属性タイプ;
         }
     }
 
