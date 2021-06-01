@@ -301,6 +301,7 @@
         string json3 = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
     // Console.WriteLine(json);json
 
+        JsonDocument jsonDocument3 = JsonDocument.Parse(json3);
         JsonElement jsonElement3 = jsonDocument.RootElement.GetProperty("[D]master_enemy_attribute");
         JsonElement.ArrayEnumerator list3 = jsonElement3.EnumerateArray();
 
