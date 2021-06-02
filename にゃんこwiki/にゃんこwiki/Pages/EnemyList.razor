@@ -1,6 +1,117 @@
-@page "/EnemyList"
-<h3>EnemyList</h3>
+@* @page "/" *@
+@using System.Text.Json
+@using System.Linq
+@using にゃんこwiki.scripts
+@inject HttpClient HttpClient
+<h3>敵の一覧</h3>
+
+
+<table class="table" style="font-size:small">
+    <thead class="thead-light">
+    <tr>
+        <th>No</th>
+        <th>属性</th>
+        <th>キャラクター名</th>
+        <th>強さ倍率</th>
+        <th>体力</th>
+        <th>㎅</th>
+        <th>速度</th>
+        <th>攻撃力</th>
+        <th>DPS</th>
+        <th>範囲</th>
+        <th>頻度フレーム</th>
+        <th>発生フレーム</th>
+        <th>射程</th>
+        <th>お金</th>
+        <th>特性</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @{
+        foreach (var 敵　in 敵一覧)
+        {
+            <tr>
+                <td>@敵.識別番号</td>
+                <td>@敵.属性ID</td>
+                <td>@敵.キャラクター名</td>
+                <td>@敵.強さ倍率</td>
+                <td>@敵.体力</td>
+                <td>@敵.ノックバック</td>
+                <td>@敵.速度</td>
+                <td>@敵.攻撃力</td>
+                <td>@敵.DPS</td>
+                <td>@敵.範囲</td>
+                <td>@敵.頻度フレーム</td>
+                <td>@敵.発生フレーム</td>
+                <td>@敵.射程</td>
+                <td>@敵.お金</td>
+                <td>@敵.特性</td>
+                <td>
+                    <button class="btn btn-primary" @onclick="@((() => OnClickDetail(敵.識別番号)))">
+                        詳細
+                    </button>
+                </td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+
 
 @code {
-    
+    List<MasterEnemy> 敵一覧 = new List<MasterEnemy>();
+
+    protected override Task OnInitializedAsync()
+    {
+        string json = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
+    // Console.WriteLine(json);json
+
+        JsonDocument jsonDocument = JsonDocument.Parse(json);
+        JsonElement jsonElement = jsonDocument.RootElement.GetProperty("[D]master_enemy");
+        JsonElement.ArrayEnumerator list = jsonElement.EnumerateArray();
+
+        foreach (JsonElement masterEnemyObject in list)
+        {
+            int 識別番号 = masterEnemyObject.GetProperty("識別番号").GetInt32();
+            int 属性ID = masterEnemyObject.GetProperty("属性ID").GetInt32();
+            string キャラクター名 = masterEnemyObject.GetProperty("キャラクター名").GetString();
+            int 強さ倍率 = masterEnemyObject.GetProperty("強さ倍率").GetInt32();
+            int 体力 = masterEnemyObject.GetProperty("体力").GetInt32();
+            int ノックバック = masterEnemyObject.GetProperty("ノックバック").GetInt32();
+            int 速度 = masterEnemyObject.GetProperty("速度").GetInt32();
+            int 攻撃力 = masterEnemyObject.GetProperty("攻撃力").GetInt32();
+            int DPS = masterEnemyObject.GetProperty("DPS").GetInt32();
+            EnemyRange 範囲 = (EnemyRange) masterEnemyObject.GetProperty("範囲").GetInt32();
+            int 頻度フレーム = masterEnemyObject.GetProperty("頻度フレーム").GetInt32();
+            int 攻発フレーム = masterEnemyObject.GetProperty("攻発フレーム").GetInt32();
+            int 射程 = masterEnemyObject.GetProperty("射程").GetInt32();
+            int お金 = masterEnemyObject.GetProperty("お金").GetInt32();
+            string 特性 = masterEnemyObject.GetProperty("特性").GetString();
+
+            MasterEnemy masterEnemy = new MasterEnemy(
+                識別番号,
+                属性ID,
+                キャラクター名,
+                強さ倍率,
+                体力,
+                ノックバック,
+                速度,
+                攻撃力,
+                DPS,
+                範囲,
+                頻度フレーム,
+                攻発フレーム,
+                射程,
+                お金,
+                特性);
+            敵一覧.Add(masterEnemy);
+        }
+    }
+
+    public void OnClickDetail(int 敵の識別番号)
+    {
+        Console.WriteLine(敵の識別番号);
+    }
+
 }

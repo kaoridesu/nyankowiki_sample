@@ -83,14 +83,13 @@ using にゃんこwiki.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
+#line 3 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/_Index.razor"
 using System.Text.Json;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class _Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -98,7 +97,7 @@ using System.Text.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 205 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/Index.razor"
+#line 205 "/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/Pages/_Index.razor"
  
     List<MasterEnemy> 敵一覧 = new List<MasterEnemy>();
     List<MasterUnit> 味方一覧 = new List<MasterUnit>();
@@ -198,6 +197,7 @@ using System.Text.Json;
         string json3 = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
     // Console.WriteLine(json);json
 
+        JsonDocument jsonDocument3 = JsonDocument.Parse(json3);
         JsonElement jsonElement3 = jsonDocument.RootElement.GetProperty("[D]master_enemy_attribute");
         JsonElement.ArrayEnumerator list3 = jsonElement3.EnumerateArray();
 

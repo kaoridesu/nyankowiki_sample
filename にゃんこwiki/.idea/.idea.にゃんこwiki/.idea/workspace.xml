@@ -6,7 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="dc308b3c-8e6d-4eca-92f6-8a5ed74f5ded" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/Pages/EnemyList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/Pages/EnemyList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/Pages/_Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/Pages/_Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/ref/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/ref/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/ref/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/ref/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.RazorComponent.input.cache" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.RazorComponent.input.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.RazorCoreGenerate.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.TagHelpers.output.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/scripts/MasterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/scripts/MasterEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/にゃんこwiki.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/にゃんこwiki.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,15 +39,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/にゃんこwiki/Pages/_Index.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/714572DA-9830-48B1-BF3A-8C1360A6A2C4/8/ComponentBase.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/にゃんこwiki/wwwroot/master-data/master_unit.json" />
       <option value="$PROJECT_DIR$/にゃんこwiki/wwwroot/master-data/master_enemy.json" />
       <option value="$PROJECT_DIR$/にゃんこwiki/Pages/Index.razor" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/MasterUnit.cs" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/UnitRange.cs" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/UnitRank.cs" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/MasterEnemyAttribute.cs" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/EnemyAttributeType.cs" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/EnemyRange.cs" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/Pages/_Index.razor" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/MasterEnemy.cs" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/Pages/EnemyList.razor" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tC21wbN1DKr50ukibrzT9A5tBv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,7 +77,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.にゃんこwiki">
@@ -85,7 +123,8 @@
       <workItem from="1622258574245" duration="3919000" />
       <workItem from="1622275228592" duration="17176000" />
       <workItem from="1622381619082" duration="10325000" />
-      <workItem from="1622437610256" duration="3702000" />
+      <workItem from="1622437610256" duration="4522000" />
+      <workItem from="1622549118552" duration="12631000" />
     </task>
     <servers />
   </component>

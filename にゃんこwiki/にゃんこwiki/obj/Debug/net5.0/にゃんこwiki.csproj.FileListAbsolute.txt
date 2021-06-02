@@ -406,7 +406,6 @@
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/Counter.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/FetchData.razor.g.cs
-/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
@@ -419,7 +418,6 @@
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/App.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/Counter.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/FetchData.razor.g.cs
-/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Shared/SurveyPrompt.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/_Imports.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs
@@ -630,3 +628,5 @@
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/ref/にゃんこwiki.dll
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb
+/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/_Index.razor.g.cs
+/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/_Index.razor.g.cs
