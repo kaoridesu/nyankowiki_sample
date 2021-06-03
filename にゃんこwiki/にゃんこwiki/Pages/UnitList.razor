@@ -1,0 +1,126 @@
+@page "/UnitList"
+@using System.Text.Json
+@using System.Linq
+@using にゃんこwiki.scripts
+
+@inject HttpClient HttpClient
+<h3>味方の一覧</h3>
+
+
+<table class="table" style="font-size: small">
+    <thead class="thead-light">
+
+    <tr>
+        <th>No</th>
+        <th>ランク</th>
+        <th>キャラクター名</th>
+        <th>カスタマイズレベル</th>
+        <th>体力</th>
+        <th>㎅</th>
+        <th>速度</th>
+        <th>攻撃力</th>
+        <th>DPS</th>
+        <th>範囲</th>
+        <th>頻度フレーム</th>
+        <th>発生フレーム</th>
+        <th>射程</th>
+        <th>コスト</th>
+        <th>発生フレーム</th>
+        <th>特性</th>
+        <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    @{
+        foreach (var 味方 in 味方一覧)
+        {
+            <tr>
+
+                <td>@味方.識別番号</td>
+                <td>@味方.ランク</td>
+                <td>@味方.キャラクター名</td>
+                <td>@味方.カスタマイズレベル</td>
+                <td>@味方.体力</td>
+                <td>@味方.ノックバック</td>
+                <td>@味方.速度</td>
+                <td>@味方.攻撃力</td>
+                <td>@味方.DPS</td>
+                <td>@味方.範囲</td>
+                <td>@味方.頻度フレーム</td>
+                <td>@味方.発生フレーム</td>
+                <td>@味方.射程</td>
+                <td>@味方.コスト</td>
+                <td>@味方.再生産フレーム</td>
+                <td>@味方.特性</td>
+                <td>
+                    <button class="btn btn-primary" @onclick="@((() => OnClickDetail(味方.識別番号)))">
+                        詳細
+                    </button>
+                </td>
+            </tr>
+        }
+
+    }
+    </tbody>
+</table>
+
+@code{
+    List<MasterUnit> 味方一覧 = new List<MasterUnit>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        string json2 = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
+    // Console.WriteLine(json);json
+
+        JsonDocument jsonDocument2 = JsonDocument.Parse(json2);
+        JsonElement jsonElement2 = jsonDocument2.RootElement.GetProperty("[D]master_unit");
+        JsonElement.ArrayEnumerator list2 = jsonElement2.EnumerateArray();
+
+        foreach (JsonElement masterUnitObject in list2)
+        {
+            int 識別番号 = masterUnitObject.GetProperty("識別番号").GetInt32();
+            UnitRank ランク = (UnitRank) masterUnitObject.GetProperty("ランク").GetInt32();
+            string キャラクター名 = masterUnitObject.GetProperty("キャラクター名").GetString();
+            int カスタマイズレベル = masterUnitObject.GetProperty("カスタマイズレベル").GetInt32();
+            int 体力 = masterUnitObject.GetProperty("体力").GetInt32();
+            int ノックバック = masterUnitObject.GetProperty("ノックバック").GetInt32();
+            int 速度 = masterUnitObject.GetProperty("速度").GetInt32();
+            int 攻撃力 = masterUnitObject.GetProperty("攻撃力").GetInt32();
+            int DPS = masterUnitObject.GetProperty("DPS").GetInt32();
+            UnitRange 範囲 = (UnitRange) masterUnitObject.GetProperty("範囲").GetInt32();
+            int 頻度フレーム = masterUnitObject.GetProperty("頻度フレーム").GetInt32();
+            int 発生フレーム = masterUnitObject.GetProperty("発生フレーム").GetInt32();
+            int 射程 = masterUnitObject.GetProperty("射程").GetInt32();
+            int コスト = masterUnitObject.GetProperty("コスト").GetInt32();
+            int 再生産フレーム = masterUnitObject.GetProperty("再生産フレーム").GetInt32();
+            string 特性 = masterUnitObject.GetProperty("特性").GetString();
+
+            MasterUnit masterUnit = new MasterUnit(
+                識別番号,
+                ランク,
+                キャラクター名,
+                カスタマイズレベル,
+                体力,
+                ノックバック,
+                速度,
+                攻撃力,
+                DPS,
+                範囲,
+                頻度フレーム,
+                発生フレーム,
+                射程,
+                コスト,
+                再生産フレーム,
+                特性);
+            味方一覧.Add(masterUnit);
+        }
+
+    }
+
+    public void OnClickDetail(int 味方の識別番号)
+    {
+        Console.WriteLine(味方の識別番号);
+    }
+
+}

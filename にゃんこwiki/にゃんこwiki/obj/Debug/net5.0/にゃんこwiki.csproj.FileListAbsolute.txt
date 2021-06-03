@@ -630,3 +630,7 @@
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/_Index.razor.g.cs
 /Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/_Index.razor.g.cs
+/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/EnemyList.razor.g.cs
+/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/EnemyList.razor.g.cs
+/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/UnitList.razor.g.cs
+/Users/kaori/Github/にゃんこwiki_sample/にゃんこwiki/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/UnitList.razor.g.cs

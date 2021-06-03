@@ -1,7 +1,8 @@
 namespace にゃんこwiki.scripts
 {
-    public class UnitRange
+    public enum UnitRange
     {
-        
+        単体 = 1,
+        範囲 = 2
     }
 }
