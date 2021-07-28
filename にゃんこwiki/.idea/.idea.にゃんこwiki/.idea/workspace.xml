@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="dc308b3c-8e6d-4eca-92f6-8a5ed74f5ded" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.にゃんこwiki/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/にゃんこwiki/Pages/EnemyList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/Pages/EnemyList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/Pages/UnitList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/Pages/UnitList.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/wwwroot/_framework/にゃんこwiki.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/bin/Debug/net5.0/にゃんこwiki.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/EnemyList.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/EnemyList.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/UnitList.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/Razor/Pages/UnitList.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/UnitList.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/Pages/UnitList.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/RazorDeclaration/にゃんこwiki.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/blazor.boot.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/にゃんこwiki/obj/Debug/net5.0/にゃんこwiki.pdb" afterDir="false" />
@@ -38,14 +41,14 @@
       <option value="$PROJECT_DIR$/にゃんこwiki/scripts/EnemyRange.cs" />
       <option value="$PROJECT_DIR$/にゃんこwiki/scripts/UnitRank.cs" />
       <option value="$PROJECT_DIR$/にゃんこwiki/scripts/UnitRange.cs" />
-      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/MasterUnit.cs" />
       <option value="$PROJECT_DIR$/にゃんこwiki/Pages/MasterUnit.razor" />
       <option value="$PROJECT_DIR$/にゃんこwiki/Pages/MasterEnemy Attribute.razor" />
       <option value="$PROJECT_DIR$/にゃんこwiki/Pages/_Index.razor" />
       <option value="$PROJECT_DIR$/にゃんこwiki/scripts/EnemyAttributeType.cs" />
-      <option value="$PROJECT_DIR$/にゃんこwiki/Pages/UnitList.razor" />
       <option value="$PROJECT_DIR$/にゃんこwiki/scripts/MasterEnemyAttribute.cs" />
       <option value="$PROJECT_DIR$/にゃんこwiki/Pages/EnemyList.razor" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/scripts/MasterUnit.cs" />
+      <option value="$PROJECT_DIR$/にゃんこwiki/Pages/UnitList.razor" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tC21wbN1DKr50ukibrzT9A5tBv" />
@@ -118,6 +121,8 @@
       <workItem from="1622636569817" duration="1526000" />
       <workItem from="1622689614589" duration="4978000" />
       <workItem from="1622802302214" duration="699000" />
+      <workItem from="1622877497988" duration="41000" />
+      <workItem from="1622882301567" duration="5420000" />
     </task>
     <servers />
   </component>

@@ -70,14 +70,14 @@
 
     protected override async Task OnInitializedAsync()
     {
-        string json2 = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
+        string json = await HttpClient.GetStringAsync(requestUri: "https://script.google.com/macros/s/AKfycbxZqFx1QUcjP9OIfItchQ5HFCCT2l-wmolVrq7j1QHO3_lTvdVFEqemL4dgwgRVxUyu4w/exec");
     // Console.WriteLine(json);json
 
-        JsonDocument jsonDocument2 = JsonDocument.Parse(json2);
-        JsonElement jsonElement2 = jsonDocument2.RootElement.GetProperty("[D]master_unit");
-        JsonElement.ArrayEnumerator list2 = jsonElement2.EnumerateArray();
+        JsonDocument jsonDocument = JsonDocument.Parse(json);
+        JsonElement jsonElement = jsonDocument.RootElement.GetProperty("[D]master_unit");
+        JsonElement.ArrayEnumerator list = jsonElement.EnumerateArray();
 
-        foreach (JsonElement masterUnitObject in list2)
+        foreach (JsonElement masterUnitObject in list)
         {
             int 識別番号 = masterUnitObject.GetProperty("識別番号").GetInt32();
             UnitRank ランク = (UnitRank) masterUnitObject.GetProperty("ランク").GetInt32();
